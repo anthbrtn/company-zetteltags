@@ -1,0 +1,32 @@
+#+TITLE: company-zetteltags
+[[http://melpa.org/#/company-qml][file:http://melpa.org/packages/company-qml-badge.svg]]
+
+A company-mode backend for autocompleting tags in your [[https://www.eliasstorms.net/zetteldeft/][Zetteldeft-based]] Zettelkasten.
+
+* Screenshots
+  [[./screenshots/example.png]]
+
+* Usage
+  To use it, you’ll naturally need [[https://github.com/company-mode/company-mode][company-mode]] and [[https://github.com/EFLS/zetteldeft][zetteldeft]].
+
+** To load it:
+: (require 'company-zetteltags)
+: (company-zetteltags-init)
+
+** Or, to add it on the fly:
+: M-x company-zetteltags-enable
+
+If you use this method, you can disable it, too:
+: M-x company-zetteltags-disable
+
+** Or, add it to =company-backends= in your =init.el=:
+: (add-to-list 'company-backends 'company-zetteltags)
+
+* Config
+
+Since the backend is hooked directly into the Zetteldeft variable =zetteldeft-tag-regex=, any completion will come after typing in whatever you’ve set for that. You can change that with =M-x customize-variable zetteldeft-tag-regex= or by placing =(setq zetteldeft-tag-regex "<your-favourite-regex>")= in your =init.el=.
+
+* TODO
++ Make it so that the function doesn't query the entire list of tags as completion candidates before narrowing.
+
+  I'm new to the lisps. Any improvements or suggestions are welcome!
