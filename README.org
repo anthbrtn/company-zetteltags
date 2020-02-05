@@ -1,5 +1,4 @@
 #+TITLE: company-zetteltags
-[[http://melpa.org/#/company-qml][file:http://melpa.org/packages/company-qml-badge.svg]]
 
 A company-mode backend for autocompleting tags in your [[https://www.eliasstorms.net/zetteldeft/][Zetteldeft-based]] Zettelkasten.
 
