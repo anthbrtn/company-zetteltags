@@ -26,7 +26,7 @@ If you use this method, you can disable it, too:
 
 Since the backend is hooked directly into the Zetteldeft variable =zetteldeft-tag-regex=, any completion will come after typing in whatever you’ve set for that. You can change that with =M-x customize-variable zetteldeft-tag-regex= or by placing =(setq zetteldeft-tag-regex "<your-favourite-regex>")= in your =init.el=.
 
-* TODO
+* To do:
 + Make it so that the function doesn't query the entire list of tags as completion candidates before narrowing.
 
   I'm new to the lisps. Any improvements or suggestions are welcome!
